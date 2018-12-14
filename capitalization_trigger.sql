@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION ensure_case_function()
+CREATE OR REPLACE FUNCTION ensureCaseFunction()
 RETURNS TRIGGER
 AS
 $$
@@ -16,8 +16,8 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER ensure_case
+CREATE TRIGGER ensureCaseTrigger
 BEFORE INSERT OR UPDATE
 ON Agent
 FOR EACH ROW
-EXECUTE PROCEDURE ensure_case_function();
+EXECUTE PROCEDURE ensureCaseFunction();
