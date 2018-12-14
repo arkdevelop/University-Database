@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION raise_email_change_notice()
+CREATE OR REPLACE FUNCTION raiseEmailChangeNotice()
 RETURNS TRIGGER
 AS
 $$
@@ -16,9 +16,9 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER email_change
+CREATE TRIGGER emailChangeTrigger
 BEFORE UPDATE
 ON University
 FOR EACH ROW
 WHEN (OLD.url IS DISTINCT FROM NEW.url)
-EXECUTE PROCEDURE raise_email_change_notice();
+EXECUTE PROCEDURE raiseEmailChangeNotice();
