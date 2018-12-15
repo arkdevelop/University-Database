@@ -1,4 +1,4 @@
-# University-Database
+# University-Database [![Codacy Badge](https://api.codacy.com/project/badge/Grade/23a219c1eeaa4e27a3217e5424d84f3a)](https://www.codacy.com/app/arkdevelop/University-Database?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=arkdevelop/University-Database&amp;utm_campaign=Badge_Grade)
 SQL files for a university/agents database
 
 <h3>create_tables.sql</h3>
